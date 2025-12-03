@@ -37,16 +37,6 @@ function SignUp() {
               <p className="validator-hint hidden">Este campo es requerido</p>
             </fieldset>
 
-            <fieldset className="fieldset flex flex-col gap-2">
-              <label className="label">Correo electrónico</label>
-              <input
-                type="email"
-                className="input validator w-full"
-                placeholder="usuario@gmail.com"
-                required
-              />
-              <p className="validator-hint hidden">Este campo es requerido</p>
-            </fieldset>
 
             <fieldset className="fieldset flex flex-col gap-2">
               <label className="label">Apellidos</label>
@@ -58,30 +48,44 @@ function SignUp() {
               />
               <p className="validator-hint hidden">Este campo es requerido</p>
             </fieldset>
-
-
-
-
-
-            <fieldset className="fieldset flex flex-col gap-2">
-              <label className="label">Contraseña</label>
-              <input
-                type="password"
-                className="input validator w-full"
-                placeholder="Contraseña_123"
-                required
-                minLength={8}
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z0-9]{8,}"
-              />
-              <span className="validator-hint hidden">
-                La contraseña nesesita cumplir los siguientes requisitos:
-                <br />Hay que tener mínimo 8 carácteres.
-                <br />Hay que tener por lo menos una mayúscula.
-                <br />Hay que tener al menos un número.
-                <br />no se permiten carácteres especiales "$,~,%,& o /".
-              </span>
-            </fieldset>
           </div>
+
+          <fieldset className="fieldset flex flex-col gap-2">
+            <label className="label">Correo electrónico</label>
+            <input
+              type="email"
+              className="input validator w-full"
+              placeholder="usuario@gmail.com"
+              required
+            />
+            <p className="validator-hint hidden">Este campo es requerido</p>
+          </fieldset>
+
+
+
+
+
+
+
+          <fieldset className="fieldset flex flex-col gap-2">
+            <label className="label">Contraseña</label>
+            <input
+              type="password"
+              className="input validator w-full"
+              placeholder="Contraseña_123"
+              required
+              minLength={8}
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z0-9]{8,}"
+            />
+            <span className="validator-hint hidden">
+              La contraseña nesesita cumplir los siguientes requisitos:
+              <br />Hay que tener mínimo 8 carácteres.
+              <br />Hay que tener por lo menos una mayúscula.
+              <br />Hay que tener al menos un número.
+              <br />no se permiten carácteres especiales "$,~,%,& o /".
+            </span>
+          </fieldset>
+
           <button type="submit" className="btn btn-neutral mt-4">
             Login
           </button>
