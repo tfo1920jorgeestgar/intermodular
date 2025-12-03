@@ -14,8 +14,10 @@ function App() {
     <>
       <div className='min-h-screen flex flex-col bg-gray-900'>
         <Header />
+        <div className='h-300 bg-white text-black'>
         <Sales />
-        <WhoWeAre />
+        <WhoWeAre />¡
+        </div>
         <Footer />
       </div>
     </>
