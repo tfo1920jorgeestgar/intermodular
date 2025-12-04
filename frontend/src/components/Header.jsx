@@ -11,7 +11,7 @@ function Header(){
     return(
         <header className="bg-gray-100 flex items-center justify-between pl-50">
           <img src={logo} className="w-20 h-20 object-cover" alt="logo de la web" />
-          <h1 onClick={() => navigate('/')} className="text-xl font-bold text-black">Akotan</h1>
+          <h1 onClick={() => navigate('/')} className="text-xl font-bold text-black">Ekotan</h1>
 
       <nav className="pr-50">
         <ul className="flex space-x-5 text-lg font-bold">
